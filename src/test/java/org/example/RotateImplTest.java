@@ -17,7 +17,7 @@ public class RotateImplTest {
 
     @Test
     public void execute() {
-        
+
         when(m.getDirection()).thenReturn(2);
         when(m.getAngularVelocity()).thenReturn(1);
         when(m.getDirectionsNumber()).thenReturn(4);

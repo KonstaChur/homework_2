@@ -1,13 +1,11 @@
 package org.example;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class MoveImpl implements Move {
     private Vector position;
     private Vector velocity;
-
-    public MoveImpl(Vector position, Vector velocity) {
-        this.position = position;
-        this.velocity = velocity;
-    }
 
     @Override
     public Vector getPosition() {
@@ -22,9 +20,5 @@ public class MoveImpl implements Move {
     @Override
     public Vector setPosition(Vector newValue) {
         return Vector.newCoords(getPosition(), getVelocity());
-    }
-
-    public void Execute(){
-        setPosition(Vector.newCoords(getPosition(), getVelocity()));
     }
 }

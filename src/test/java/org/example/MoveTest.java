@@ -35,9 +35,7 @@ class MoveTest {
 
         Vector newPosition = move.setPosition(velocityMock);
 
-        int[] newPositionCoords = newPosition.getCoords();
-
-        assertArrayEquals(new int[]{5, 8}, newPositionCoords);
+        assertArrayEquals(new int[]{5, 8}, newPosition.getCoords());
     }
 
     @Test
